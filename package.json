@@ -1,0 +1,31 @@
+{
+  "name": "sri-vogue-fullstack-pro",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "import:images": "node scripts/import-images.mjs",
+    "check:catalogue": "node scripts/check-catalogue.mjs",
+    "server": "node server/index.js",
+    "client": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "db:init": "node server/init-mongodb.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.468.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest",
+    "mongoose": "^8.9.5",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {}
+}

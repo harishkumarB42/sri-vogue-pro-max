@@ -1,0 +1,16 @@
+SRI VOGUE - MONGODB SETUP
+
+1. Install MongoDB locally or create a MongoDB Atlas cluster.
+2. Copy .env.example to .env.
+3. Set MONGODB_URI in .env. Example local URI:
+   mongodb://127.0.0.1:27017/sri_vogue
+4. Open a terminal in this project folder (the folder containing package.json).
+5. Run:
+   npm install
+   npm run db:init
+   npm run dev
+6. Frontend: http://localhost:5173
+   API:      http://localhost:4000/api/health
+
+The initializer upserts the 133 product records into MongoDB. User accounts, carts,
+and orders still use local JSON files in this project version.
